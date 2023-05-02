@@ -1,0 +1,633 @@
+$textcolor: rgb(255, 255, 255);
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+// about skill contact
+
+.heading {
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    color: #fff;
+    font-size: 80px;
+}
+// home section
+.home-image {
+    background-image: url('./images/main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    // position: relative;
+
+    .name {
+        color: $textcolor ;
+        text-align: center;
+        padding-top: 275px;
+        padding-bottom: 0px;
+        // font-family: 'Monoton', cursive;
+        font-size: 140PX;
+    }
+
+    .dev {
+        color: $textcolor ;
+        text-align: center;
+        padding-bottom: 280px;
+        font-size: 40PX;
+    }
+
+    nav {
+        position: fixed;
+        padding-top: 20px;
+        // padding-bottom: 50px;
+        // padding-left: 20px;
+        // position: fixed;
+        // top: 10px;
+        width: 100%;
+        // height: 50px;
+        // background-color: #e4f500; /* set default background color */
+        transition: background-color 0.5s ease-in-out;
+
+        .navbar-brand {
+            font-family: 'Chivo Mono', monospace;
+            font-family: 'Rubik Wet Paint', cursive;
+            font-size: 40px;
+            // letter-spacing: 10px;
+            color: #66d9ed;
+        }
+
+        .navbar-toggler {
+            color: #fff;
+            background-color: aqua;
+        }
+
+        .navbar-collapse {
+            padding-left: 370px;
+
+            .navbar-nav {
+                .nav-link {
+                    font-family: 'Chivo Mono', monospace;
+                    font-family: 'Roboto Mono', monospace;
+                    font-size: 20px;
+                    color: $textcolor ;
+                }
+            }
+        }
+    }
+
+    nav.scrolled {
+        // background-color: #848e  7;
+        /* set background color on scroll */
+        width: 100%;
+        margin-left: -12px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        .nav-link {
+            color: #66d9ed !important;
+        }
+
+        .navbar-brand {
+            visibility: hidden;
+        }
+
+    }
+}
+
+// about section
+
+#about-section {
+    background-color: #000;
+    height: 100vh;
+
+    .about-page {
+        /* border: 10px solid yellow; */
+        height: 100vh;
+        // background-color: black;
+
+
+        .fa-brands {
+            font-size: 40px;
+            color: #dfb10c;
+            letter-spacing: 20px;
+        }
+        .intro {
+            padding-top: 20px;
+            // padding-left: 35px;
+
+            .intro-name {
+                color: #dfb10c;
+                // font-family: 'Source Serif Pro', serif;
+                // font-family: 'Roboto Slab', serif;
+                font-family: 'Noto Serif JP', serif;
+                font-weight: 20px;
+                font-size: 60px;
+                padding-bottom: 20px;
+            }
+
+            .intro-para {
+                font-size: 25px;
+                color: #fff;
+                line-height: 2;
+                padding-bottom: 30px;
+                font-family: 'Antic Slab', serif;
+            }
+
+            .box {
+                border: 1px solid #dfb10c;
+                padding: 20px;
+                color: #fff;
+                font-size: 18px;
+            }
+
+            .about-btn {
+                padding-top: 40px;
+                // padding-bottom: 110px;
+
+               
+
+            }
+
+        }
+
+        .img-section {
+
+            text-align: center;
+
+            img {
+                padding-top: 20px;
+            }
+
+            p {
+                // padding-left: 140px;
+                padding-top: 50px;
+                color: #fff;
+                font-size: 30px;
+                /* width: 670px; */
+                /* height: 810px; */
+            }
+
+            div:last-child {
+                // padding-left: 140px;
+                padding-top: 60px;
+            
+            }
+        }
+    }
+}
+
+// skill-section
+
+#skill-section {
+    // height: 100vh;
+    background-color: #000;
+    .skill-page {
+
+        .skill-icon {
+            text-align: center;
+            color: #fff;
+            
+            background-color: #333;
+            // border: 2px solid yellow;
+            border-radius: 20px;
+            font-size: 80px;
+            margin-top: 50px;
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 70px;
+
+            h1 {
+                color: #fff;
+                padding-bottom: 50px;
+                padding-top: 20px;
+                font-family: 'Roboto Slab', serif;
+            }
+
+            // .fa-brands {
+            //     // font-size: 300px;
+            // }
+        }
+
+        .last-child {
+            padding-bottom: 80px;
+        }
+    }
+}
+
+// work-section
+
+#my-work {
+    .work-content p {
+        padding-top: 50px;
+        // text-align: center;
+        color: #000;
+        font-family: 'Noto Serif JP', serif;
+        font-size: 80px;
+
+    }
+
+    .work-content h2 {
+        color: #000;
+        font-size: 50px;
+        font-family: 'Noto Serif JP', serif;
+        // text-align: center;
+    }
+
+    .fsd-image {
+        text-align: center;
+        padding-bottom: 80px;
+    }
+}
+
+// contact-section
+
+#contact-section{
+    .contact-heading{
+
+    }
+}
+
+
+
+// responsive in mobile Small 320px
+
+@media only screen and (max-width: 320px) {
+    .name {
+        font-size: 35px !important;
+        padding-top: 305px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 185px !important;
+        font-size: 12px !important;
+    }
+
+    .navbar {
+        // padding-left: 0px !important;
+
+        .container-fluid {
+            padding-right: 35px !important;
+
+            .navbar-brand {
+                font-size: 15px !important;
+                // margin-right: 130px;
+            }
+
+            .navbar-toggler {
+                font-size: 10px !important;
+            }
+
+            .navbar-collapse {
+                padding-left: 0px !important;
+
+                .navbar-nav {
+                    .nav-link {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #about-section{
+        // height: 174vh;
+        .intro{
+            .box{
+                font-size: 14px !important;
+            }
+            .icons{
+                padding-top: 50px !important;
+            }
+        }
+        .img-section{
+            img{
+                width: 260px;
+            }
+            p{
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    #skill-section {
+        padding-top: 585px;
+
+        .skill-page {
+            .skill-heading {
+                padding-top: 10px;
+            }
+
+            .skill-icon {
+                margin-left: 0px;
+
+            }
+        }
+    }
+}
+
+// responsive in  mobile Medium 375px
+
+@media (min-width: 321px) and (max-width:375px) {
+    .name {
+        font-size: 45px !important;
+        padding-top: 305px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 185px !important;
+        font-size: 18px !important;
+    }
+
+    .navbar {
+        // padding-left: 0px !important;
+
+        .container-fluid {
+            padding-right: 32px !important;
+
+            .navbar-brand {
+                font-size: 20px !important;
+                // margin-right: 160px;
+            }
+
+            .navbar-toggler {
+                font-size: 12px !important;
+            }
+
+            .navbar-collapse {
+                padding-left: 0px !important;
+
+                .navbar-nav {
+                    .nav-link {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #about-section{
+        .intro{
+            .box{
+                font-size: 14px !important;
+            }
+            .icons{
+                padding-top: 50px !important;
+            }
+        }
+        .img-section{
+            img{
+                width: 260px;
+            }
+            p{
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    #skill-section {
+        padding-top: 585px;
+
+        .skill-page {
+            .skill-heading {
+                padding-top: 10px;
+            }
+
+            .skill-icon {
+                margin-left: 0px;
+
+            }
+        }
+    }
+
+}
+
+// responsive in  mobile Large 425px
+
+@media (min-width: 376px) and (max-width:425px) {
+    .name {
+        font-size: 55px !important;
+        padding-top: 305px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 185px !important;
+        font-size: 24px !important;
+    }
+
+    .navbar {
+        // padding-left: 0% !important;
+
+        .container-fluid {
+            // padding-left: 0% !important;
+            padding-right: 35px !important;
+
+            .navbar-brand {
+                // margin-right: 125px;
+                font-size: 35px !important;
+            }
+
+            .navbar-collapse {
+                padding-left: 0% !important;
+
+                .navbar-nav {
+                    .nav-link {
+                        font-size: 17px !important;
+                    }
+                }
+            }
+        }
+
+    } 
+
+    #about-section{
+        .intro{
+            .box{
+                font-size: 14px !important;
+            }
+            .icons{
+                padding-top: 50px !important;
+            }
+        }
+        .img-section{
+            img{
+                width: 260px;
+            }
+            p{
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    #skill-section {
+        padding-top: 585px;
+
+        .skill-page {
+            .skill-heading {
+                padding-top: 10px;
+            }
+
+            .skill-icon {
+                margin-left: 0px;
+
+            }
+        }
+    }
+
+}
+
+// responsive in Tablet 768px
+
+@media (min-width:426px) and (max-width:768px) {
+    .name {
+        font-size: 95px !important;
+        padding-top: 305px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 185px !important;
+        font-size: 35px !important;
+    }
+
+    .navbar {
+        .container-fluid {
+            padding-right: 35px !important;
+
+            .navbar-brand {
+                margin-right: 350px;
+                font-size: 45px !important;
+            }
+
+            .navbar-collapse {
+                padding-left: 0% !important;
+            }
+        }
+
+    }
+    #about-section{
+        .intro{
+            .box{
+                font-size: 14px !important;
+            }
+            .icons{
+                padding-top: 50px !important;
+            }
+        }
+        .img-section{
+            img{
+                width: 260px;
+            }
+            p{
+                font-size: 25px !important;
+            }
+        }
+    }
+    #skill-section {
+        padding-top: 110px;
+
+        .skill-page {
+            .skill-heading {
+                padding-top: 10px;
+            }
+
+            .skill-icon {
+                margin-left: 50px;
+                font-size: 70px;
+            }
+        }
+    }
+
+    }
+
+// responsive in laptop 1024px
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .name {
+        font-size: 130px !important;
+        padding-top: 270px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 180px !important;
+        font-size: 50px !important;
+    }
+
+    .navbar {
+        padding-left: 0% !important;
+
+        .navbar-brand {
+            font-size: 35px !important;
+        }
+
+        .navbar-collapse {
+            padding-left: 65px !important;
+
+            .navbar-nav {
+                .nav-link {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+
+    #about-section{
+        .intro{
+            .box{
+                font-size: 15px !important;
+            }
+            .icons{
+                padding-top: 50px !important;
+            }
+        }
+        .img-section{
+            img{
+                width: 310px;
+            }
+            p{
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    
+}
+
+
+//  responsive in laptop L 1440px
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .name {
+        font-size: 130px !important;
+        padding-top: 390px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 180px !important;
+        font-size: 50px !important;
+    }
+
+    .navbar {
+        padding-left: 0% !important;
+
+        .navbar-brand {
+            font-size: 45px !important;
+        }
+
+        .navbar-collapse {
+            padding-left: 115px !important;
+
+            .navbar-nav {
+                .nav-link {
+                    font-size: 22px !important;
+                }
+            }
+        }
+    }
+}

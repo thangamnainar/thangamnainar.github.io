@@ -1,0 +1,395 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.heading {
+  padding-top: 40px;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  color: #fff;
+  font-size: 80px;
+}
+
+.home-image {
+  background-image: url("./images/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.home-image .name {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 275px;
+  padding-bottom: 0px;
+  font-size: 140PX;
+}
+.home-image .dev {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 280px;
+  font-size: 40PX;
+}
+.home-image nav {
+  position: fixed;
+  padding-top: 20px;
+  width: 100%;
+  transition: background-color 0.5s ease-in-out;
+}
+.home-image nav .navbar-brand {
+  font-family: "Chivo Mono", monospace;
+  font-family: "Rubik Wet Paint", cursive;
+  font-size: 40px;
+  color: #66d9ed;
+}
+.home-image nav .navbar-toggler {
+  color: #fff;
+  background-color: aqua;
+}
+.home-image nav .navbar-collapse {
+  padding-left: 370px;
+}
+.home-image nav .navbar-collapse .navbar-nav .nav-link {
+  font-family: "Chivo Mono", monospace;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.home-image nav.scrolled {
+  /* set background color on scroll */
+  width: 100%;
+  margin-left: -12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.home-image nav.scrolled .nav-link {
+  color: #66d9ed !important;
+}
+.home-image nav.scrolled .navbar-brand {
+  visibility: hidden;
+}
+
+#about-section {
+  background-color: #000;
+  height: 100vh;
+}
+#about-section .about-page {
+  /* border: 10px solid yellow; */
+  height: 100vh;
+}
+#about-section .about-page .fa-brands {
+  font-size: 40px;
+  color: #dfb10c;
+  letter-spacing: 20px;
+}
+#about-section .about-page .intro {
+  padding-top: 20px;
+}
+#about-section .about-page .intro .intro-name {
+  color: #dfb10c;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 20px;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+#about-section .about-page .intro .intro-para {
+  font-size: 25px;
+  color: #fff;
+  line-height: 2;
+  padding-bottom: 30px;
+  font-family: "Antic Slab", serif;
+}
+#about-section .about-page .intro .box {
+  border: 1px solid #dfb10c;
+  padding: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+#about-section .about-page .intro .about-btn {
+  padding-top: 40px;
+}
+#about-section .about-page .img-section {
+  text-align: center;
+}
+#about-section .about-page .img-section img {
+  padding-top: 20px;
+}
+#about-section .about-page .img-section p {
+  padding-top: 50px;
+  color: #fff;
+  font-size: 30px;
+  /* width: 670px; */
+  /* height: 810px; */
+}
+#about-section .about-page .img-section div:last-child {
+  padding-top: 60px;
+}
+
+#skill-section {
+  background-color: #000;
+}
+#skill-section .skill-page .skill-icon {
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  border-radius: 20px;
+  font-size: 80px;
+  margin-top: 50px;
+  margin-left: 80px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+#skill-section .skill-page .skill-icon h1 {
+  color: #fff;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  font-family: "Roboto Slab", serif;
+}
+#skill-section .skill-page .last-child {
+  padding-bottom: 80px;
+}
+
+#my-work .work-content p {
+  padding-top: 50px;
+  color: #000;
+  font-family: "Noto Serif JP", serif;
+  font-size: 80px;
+}
+#my-work .work-content h2 {
+  color: #000;
+  font-size: 50px;
+  font-family: "Noto Serif JP", serif;
+}
+#my-work .fsd-image {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 320px) {
+  .name {
+    font-size: 35px !important;
+    padding-top: 305px !important;
+    padding-bottom: 0px !important;
+  }
+  .dev {
+    font-size: 12px !important;
+  }
+  .navbar .container-fluid {
+    padding-right: 35px !important;
+  }
+  .navbar .container-fluid .navbar-brand {
+    font-size: 15px !important;
+  }
+  .navbar .container-fluid .navbar-toggler {
+    font-size: 10px !important;
+  }
+  .navbar .container-fluid .navbar-collapse {
+    padding-left: 0px !important;
+  }
+  .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link {
+    font-size: 13px !important;
+  }
+  #about-section .intro .box {
+    font-size: 14px !important;
+  }
+  #about-section .intro .icons {
+    padding-top: 50px !important;
+  }
+  #about-section .img-section img {
+    width: 260px;
+  }
+  #about-section .img-section p {
+    font-size: 25px !important;
+  }
+  #skill-section {
+    padding-top: 585px;
+  }
+  #skill-section .skill-page .skill-heading {
+    padding-top: 10px;
+  }
+  #skill-section .skill-page .skill-icon {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .name {
+    font-size: 45px !important;
+    padding-top: 305px !important;
+  }
+  .dev {
+    font-size: 18px !important;
+  }
+  .navbar .container-fluid {
+    padding-right: 32px !important;
+  }
+  .navbar .container-fluid .navbar-brand {
+    font-size: 20px !important;
+  }
+  .navbar .container-fluid .navbar-toggler {
+    font-size: 12px !important;
+  }
+  .navbar .container-fluid .navbar-collapse {
+    padding-left: 0px !important;
+  }
+  .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link {
+    font-size: 15px !important;
+  }
+  #about-section .intro .box {
+    font-size: 14px !important;
+  }
+  #about-section .intro .icons {
+    padding-top: 50px !important;
+  }
+  #about-section .img-section img {
+    width: 260px;
+  }
+  #about-section .img-section p {
+    font-size: 25px !important;
+  }
+  #skill-section {
+    padding-top: 585px;
+  }
+  #skill-section .skill-page .skill-heading {
+    padding-top: 10px;
+  }
+  #skill-section .skill-page .skill-icon {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .name {
+    font-size: 55px !important;
+    padding-top: 305px !important;
+  }
+  .dev {
+    font-size: 24px !important;
+  }
+  .navbar .container-fluid {
+    padding-right: 35px !important;
+  }
+  .navbar .container-fluid .navbar-brand {
+    font-size: 35px !important;
+  }
+  .navbar .container-fluid .navbar-collapse {
+    padding-left: 0% !important;
+  }
+  .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link {
+    font-size: 17px !important;
+  }
+  #about-section .intro .box {
+    font-size: 14px !important;
+  }
+  #about-section .intro .icons {
+    padding-top: 50px !important;
+  }
+  #about-section .img-section img {
+    width: 260px;
+  }
+  #about-section .img-section p {
+    font-size: 25px !important;
+  }
+  #skill-section {
+    padding-top: 585px;
+  }
+  #skill-section .skill-page .skill-heading {
+    padding-top: 10px;
+  }
+  #skill-section .skill-page .skill-icon {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .name {
+    font-size: 95px !important;
+    padding-top: 305px !important;
+  }
+  .dev {
+    font-size: 35px !important;
+  }
+  .navbar .container-fluid {
+    padding-right: 35px !important;
+  }
+  .navbar .container-fluid .navbar-brand {
+    margin-right: 350px;
+    font-size: 45px !important;
+  }
+  .navbar .container-fluid .navbar-collapse {
+    padding-left: 0% !important;
+  }
+  #about-section .intro .box {
+    font-size: 14px !important;
+  }
+  #about-section .intro .icons {
+    padding-top: 50px !important;
+  }
+  #about-section .img-section img {
+    width: 260px;
+  }
+  #about-section .img-section p {
+    font-size: 25px !important;
+  }
+  #skill-section {
+    padding-top: 110px;
+  }
+  #skill-section .skill-page .skill-heading {
+    padding-top: 10px;
+  }
+  #skill-section .skill-page .skill-icon {
+    margin-left: 50px;
+    font-size: 70px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .name {
+    font-size: 130px !important;
+    padding-top: 270px !important;
+  }
+  .dev {
+    font-size: 50px !important;
+  }
+  .navbar {
+    padding-left: 0% !important;
+  }
+  .navbar .navbar-brand {
+    font-size: 35px !important;
+  }
+  .navbar .navbar-collapse {
+    padding-left: 65px !important;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-link {
+    font-size: 16px !important;
+  }
+  #about-section .intro .box {
+    font-size: 15px !important;
+  }
+  #about-section .intro .icons {
+    padding-top: 50px !important;
+  }
+  #about-section .img-section img {
+    width: 310px;
+  }
+  #about-section .img-section p {
+    font-size: 25px !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .name {
+    font-size: 130px !important;
+    padding-top: 390px !important;
+  }
+  .dev {
+    font-size: 50px !important;
+  }
+  .navbar {
+    padding-left: 0% !important;
+  }
+  .navbar .navbar-brand {
+    font-size: 45px !important;
+  }
+  .navbar .navbar-collapse {
+    padding-left: 115px !important;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-link {
+    font-size: 22px !important;
+  }
+}/*# sourceMappingURL=index.css.map */
