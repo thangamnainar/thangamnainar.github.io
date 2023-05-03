@@ -233,29 +233,16 @@ body{
     }
 }
 
-// work-section
+// project-section
 
-#my-work {
-    .work-content p {
-        padding-top: 50px;
-        // text-align: center;
-        color: #000;
-        font-family: 'Antic Slab', serif;
-        ;
-        font-size: 80px;
-
+#projects {
+    height: 100vh;
+    .carousel{
+        padding-top: 40px;
     }
-
-    .work-content h2 {
-        color: #000;
-        font-size: 50px;
-        font-family: 'Antic Slab', serif;
-        // text-align: center;
-    }
-
-    .fsd-image {
-        text-align: center;
-        padding-bottom: 80px;
+    .read-btn{
+        padding-top: 20px;
+        text-align: end;
     }
 }
 
