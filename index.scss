@@ -4,6 +4,7 @@ $textcolor: rgb(255, 255, 255);
     padding: 0%;
     margin: 0%;
 }
+
 // about skill contact
 
 .heading {
@@ -11,8 +12,13 @@ $textcolor: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Noto Serif JP', serif;
     color: #fff;
-    font-size: 80px;
+    font-size: 55px;
+    font-weight: 800;
 }
+body{
+    background-color: #000;
+}
+
 // home section
 .home-image {
     background-image: url('./images/main.jpg');
@@ -59,7 +65,7 @@ $textcolor: rgb(255, 255, 255);
 
         .navbar-toggler {
             color: #fff;
-            background-color: aqua;
+            background-color:#dfb10c;
         }
 
         .navbar-collapse {
@@ -71,6 +77,7 @@ $textcolor: rgb(255, 255, 255);
                     font-family: 'Roboto Mono', monospace;
                     font-size: 20px;
                     color: $textcolor ;
+                    // background-color: #000;
                 }
             }
         }
@@ -79,13 +86,15 @@ $textcolor: rgb(255, 255, 255);
     nav.scrolled {
         // background-color: #848e  7;
         /* set background color on scroll */
+        margin-top: 0%;
         width: 100%;
         margin-left: -12px;
         padding-top: 0px;
         padding-bottom: 0px;
 
         .nav-link {
-            color: #66d9ed !important;
+            color: #dfb10c !important;
+            // background-color: #000;  
         }
 
         .navbar-brand {
@@ -95,11 +104,18 @@ $textcolor: rgb(255, 255, 255);
     }
 }
 
+@media (max-width:768px){
+    nav.scrolled{
+        .nav-link{
+            background-color: #000;
+        }
+    }
+}
 // about section
 
 #about-section {
-    background-color: #000;
-    height: 100vh;
+    // background-color: #000;
+    // height: 100vh;
 
     .about-page {
         /* border: 10px solid yellow; */
@@ -112,14 +128,13 @@ $textcolor: rgb(255, 255, 255);
             color: #dfb10c;
             letter-spacing: 20px;
         }
+
         .intro {
             padding-top: 20px;
             // padding-left: 35px;
 
             .intro-name {
                 color: #dfb10c;
-                // font-family: 'Source Serif Pro', serif;
-                // font-family: 'Roboto Slab', serif;
                 font-family: 'Noto Serif JP', serif;
                 font-weight: 20px;
                 font-size: 60px;
@@ -138,6 +153,7 @@ $textcolor: rgb(255, 255, 255);
                 border: 1px solid #dfb10c;
                 padding: 20px;
                 color: #fff;
+                font-family: 'Antic Slab', serif;
                 font-size: 18px;
             }
 
@@ -145,7 +161,7 @@ $textcolor: rgb(255, 255, 255);
                 padding-top: 40px;
                 // padding-bottom: 110px;
 
-               
+
 
             }
 
@@ -171,7 +187,7 @@ $textcolor: rgb(255, 255, 255);
             div:last-child {
                 // padding-left: 140px;
                 padding-top: 60px;
-            
+
             }
         }
     }
@@ -181,13 +197,14 @@ $textcolor: rgb(255, 255, 255);
 
 #skill-section {
     // height: 100vh;
-    background-color: #000;
+    // background-color: #000;
+
     .skill-page {
 
         .skill-icon {
             text-align: center;
             color: #fff;
-            
+
             background-color: #333;
             // border: 2px solid yellow;
             border-radius: 20px;
@@ -201,7 +218,8 @@ $textcolor: rgb(255, 255, 255);
                 color: #fff;
                 padding-bottom: 50px;
                 padding-top: 20px;
-                font-family: 'Roboto Slab', serif;
+                // font-family: 'Roboto Slab', serif;
+                font-family: 'Antic Slab', serif;
             }
 
             // .fa-brands {
@@ -222,7 +240,8 @@ $textcolor: rgb(255, 255, 255);
         padding-top: 50px;
         // text-align: center;
         color: #000;
-        font-family: 'Noto Serif JP', serif;
+        font-family: 'Antic Slab', serif;
+        ;
         font-size: 80px;
 
     }
@@ -230,7 +249,7 @@ $textcolor: rgb(255, 255, 255);
     .work-content h2 {
         color: #000;
         font-size: 50px;
-        font-family: 'Noto Serif JP', serif;
+        font-family: 'Antic Slab', serif;
         // text-align: center;
     }
 
@@ -242,10 +261,100 @@ $textcolor: rgb(255, 255, 255);
 
 // contact-section
 
-#contact-section{
-    .contact-heading{
-
+#contact-section {
+    // height: 100vh;
+    background-color: #000;
+    .last-child {
+        font-size: 2.5vh;
+        color: #fff;
     }
+
+    .row {
+        margin-top: 4vh;
+        padding-bottom: 50px;
+        .col-sm-4 {
+            background-color: #333;
+            color: #fff;
+            border-radius: 20px;
+            padding: 7vh;
+            // font-family: 'Antic Slab', serif;
+
+            h2 {
+                padding-bottom: 1.5vh;
+                font-family: 'Antic Slab', serif;
+                font-weight: 600;
+            }
+
+            P {
+                padding-bottom: 3vh;
+            }
+
+            .icon {
+                font-size: 2.5vh;
+                color: #dfb10c;
+            }
+
+            .contact-icons {
+                padding-top: 9.5vh;
+                word-spacing: 10px;
+
+                .fa-brands {
+                    font-size: 3vh;
+                    padding: 1vh;
+                }
+
+                .fa-brands:hover {
+                    background-color: #dfb10c;
+                    border-radius: 6vh;
+
+                }
+            }
+        }
+        .col-sm-8{
+
+            .col-sm-6{
+                padding-left: 8vh;
+                label{
+                    padding-bottom: 4vh;
+                    color: #fff;
+                    font-family: 'Antic Slab', serif;
+                    font-size: 25px;
+                }
+                .top-padding{
+                    padding-top: 8vh;
+                }
+                input{
+                    border: none;
+                    background-color: #000;
+                    border-bottom: 1px solid #dfb10c;
+                }
+            }
+            .message{
+                padding-left: 7vh;
+            }
+            .top-padding{
+                padding-top: 8vh;
+                // padding-left: 8vh;
+            }
+            input{
+                border: none;
+                border-bottom: 1px solid #dfb10c;
+                background-color: #000;
+            }
+            label{
+                padding-bottom: 4vh;
+                color: #fff;
+                font-family: 'Antic Slab', serif;
+                font-size: 25px;
+            }
+            .send-btn{
+                padding-top: 8vh;
+                text-align:right
+            }
+        }
+        
+    }
+   
 }
 
 
@@ -292,21 +401,25 @@ $textcolor: rgb(255, 255, 255);
 
     }
 
-    #about-section{
+    #about-section {
+
         // height: 174vh;
-        .intro{
-            .box{
+        .intro {
+            .box {
                 font-size: 14px !important;
             }
-            .icons{
+
+            .icons {
                 padding-top: 50px !important;
             }
         }
-        .img-section{
-            img{
+
+        .img-section {
+            img {
                 width: 260px;
             }
-            p{
+
+            p {
                 font-size: 25px !important;
             }
         }
@@ -326,6 +439,33 @@ $textcolor: rgb(255, 255, 255);
             }
         }
     }
+
+    #contact-section{
+        // height: 225vh;
+        .sec-2{
+            .col-sm-6{
+                padding-left: 3vh !important;
+                input{
+                    width: 35vh !important;
+                }
+                label{
+                    padding-top: 5vh;
+                }
+               
+            }
+            .message{
+                padding-left: 2vh !important;
+            }
+            input{
+                width: 35vh !important;
+            }
+            .send-btn{
+                margin-right: 7px;
+            }
+
+        }
+    }
+    
 }
 
 // responsive in  mobile Medium 375px
@@ -369,20 +509,23 @@ $textcolor: rgb(255, 255, 255);
         }
     }
 
-    #about-section{
-        .intro{
-            .box{
+    #about-section {
+        .intro {
+            .box {
                 font-size: 14px !important;
             }
-            .icons{
+
+            .icons {
                 padding-top: 50px !important;
             }
         }
-        .img-section{
-            img{
+
+        .img-section {
+            img {
                 width: 260px;
             }
-            p{
+
+            p {
                 font-size: 25px !important;
             }
         }
@@ -400,6 +543,31 @@ $textcolor: rgb(255, 255, 255);
                 margin-left: 0px;
 
             }
+        }
+    }
+    #contact-section{
+        // height: 225vh;
+        .sec-2{
+            .col-sm-6{
+                padding-left: 5vh !important;
+                input{
+                    width: 36vh !important;
+                }
+                label{
+                    padding-top: 6vh;
+                }
+               
+            }
+            .message{
+                padding-left: 3vh !important;
+            }
+            input{
+                width: 37vh !important;
+            }
+            .send-btn{
+                margin-right: 22px;
+            }
+
         }
     }
 
@@ -442,22 +610,25 @@ $textcolor: rgb(255, 255, 255);
             }
         }
 
-    } 
+    }
 
-    #about-section{
-        .intro{
-            .box{
+    #about-section {
+        .intro {
+            .box {
                 font-size: 14px !important;
             }
-            .icons{
+
+            .icons {
                 padding-top: 50px !important;
             }
         }
-        .img-section{
-            img{
+
+        .img-section {
+            img {
                 width: 260px;
             }
-            p{
+
+            p {
                 font-size: 25px !important;
             }
         }
@@ -475,6 +646,42 @@ $textcolor: rgb(255, 255, 255);
                 margin-left: 0px;
 
             }
+        }
+    }
+
+    #contact-section{
+        // height: 215vh;
+        .sec-1{
+            padding: 3vh !important;
+
+            p{
+                padding-bottom: 5vh !important;
+                font-size: 11px;
+            }
+            .contact-icons{
+                padding-top: 5.5vh !important;
+            }
+        }
+        .sec-2{
+            .col-sm-6{
+                padding-left: 5vh !important;
+                input{
+                    width: 43vh !important;
+                }
+                label{
+                    padding-top: 6vh;
+                }
+            }
+            .message{
+                padding-left: 3vh !important;
+            }
+            input{
+                width: 43vh !important;
+            }
+            .send-btn{
+                margin-right: 28px;
+            }
+
         }
     }
 
@@ -509,24 +716,29 @@ $textcolor: rgb(255, 255, 255);
         }
 
     }
-    #about-section{
-        .intro{
-            .box{
+
+    #about-section {
+        .intro {
+            .box {
                 font-size: 14px !important;
             }
-            .icons{
+
+            .icons {
                 padding-top: 50px !important;
             }
         }
-        .img-section{
-            img{
+
+        .img-section {
+            img {
                 width: 260px;
             }
-            p{
+
+            p {
                 font-size: 25px !important;
             }
         }
     }
+
     #skill-section {
         padding-top: 110px;
 
@@ -542,7 +754,32 @@ $textcolor: rgb(255, 255, 255);
         }
     }
 
+    #contact-section{
+        .sec-1{
+            padding: 3vh !important;
+
+            p{
+                padding-bottom: 5vh !important;
+                font-size: 11px;
+            }
+            .contact-icons{
+                padding-top: 5.5vh !important;
+            }
+        }
+        .sec-2{
+            .col-sm-6{
+                input{
+                    width: 20vh !important;
+                }
+            }
+            input{
+                width: 50vh !important;
+            }
+
+        }
     }
+
+}
 
 // responsive in laptop 1024px
 
@@ -576,26 +813,57 @@ $textcolor: rgb(255, 255, 255);
         }
     }
 
-    #about-section{
-        .intro{
-            .box{
+    #about-section {
+        .intro {
+            .box {
                 font-size: 15px !important;
             }
-            .icons{
+
+            .icons {
                 padding-top: 50px !important;
             }
         }
-        .img-section{
-            img{
+
+        .img-section {
+            img {
                 width: 310px;
             }
-            p{
+
+            p {
                 font-size: 25px !important;
             }
         }
     }
 
-    
+    #contact-section{
+        .sec-1{
+            padding: 3vh !important;
+
+            h2{
+                padding-bottom: 2.5vh !important;
+            }
+
+            p{
+                padding-bottom: 5vh !important;
+            }
+            .contact-icons{
+                padding-top: 5.5vh !important;
+            }
+        }
+        .sec-2{
+            .col-sm-6{
+                input{
+                    width: 30vh !important;
+                }
+            }
+            input{
+                width: 70vh !important;
+            }
+
+        }
+    }
+
+
 }
 
 

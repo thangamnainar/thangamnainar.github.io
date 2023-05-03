@@ -8,7 +8,12 @@
   text-align: center;
   font-family: "Noto Serif JP", serif;
   color: #fff;
-  font-size: 80px;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+body {
+  background-color: #000;
 }
 
 .home-image {
@@ -44,7 +49,7 @@
 }
 .home-image nav .navbar-toggler {
   color: #fff;
-  background-color: aqua;
+  background-color: #dfb10c;
 }
 .home-image nav .navbar-collapse {
   padding-left: 370px;
@@ -57,21 +62,23 @@
 }
 .home-image nav.scrolled {
   /* set background color on scroll */
+  margin-top: 0%;
   width: 100%;
   margin-left: -12px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 .home-image nav.scrolled .nav-link {
-  color: #66d9ed !important;
+  color: #dfb10c !important;
 }
 .home-image nav.scrolled .navbar-brand {
   visibility: hidden;
 }
 
-#about-section {
-  background-color: #000;
-  height: 100vh;
+@media (max-width: 768px) {
+  nav.scrolled .nav-link {
+    background-color: #000;
+  }
 }
 #about-section .about-page {
   /* border: 10px solid yellow; */
@@ -103,6 +110,7 @@
   border: 1px solid #dfb10c;
   padding: 20px;
   color: #fff;
+  font-family: "Antic Slab", serif;
   font-size: 18px;
 }
 #about-section .about-page .intro .about-btn {
@@ -125,9 +133,6 @@
   padding-top: 60px;
 }
 
-#skill-section {
-  background-color: #000;
-}
 #skill-section .skill-page .skill-icon {
   text-align: center;
   color: #fff;
@@ -143,7 +148,7 @@
   color: #fff;
   padding-bottom: 50px;
   padding-top: 20px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Antic Slab", serif;
 }
 #skill-section .skill-page .last-child {
   padding-bottom: 80px;
@@ -152,17 +157,97 @@
 #my-work .work-content p {
   padding-top: 50px;
   color: #000;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Antic Slab", serif;
   font-size: 80px;
 }
 #my-work .work-content h2 {
   color: #000;
   font-size: 50px;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Antic Slab", serif;
 }
 #my-work .fsd-image {
   text-align: center;
   padding-bottom: 80px;
+}
+
+#contact-section {
+  background-color: #000;
+}
+#contact-section .last-child {
+  font-size: 2.5vh;
+  color: #fff;
+}
+#contact-section .row {
+  margin-top: 4vh;
+  padding-bottom: 50px;
+}
+#contact-section .row .col-sm-4 {
+  background-color: #333;
+  color: #fff;
+  border-radius: 20px;
+  padding: 7vh;
+}
+#contact-section .row .col-sm-4 h2 {
+  padding-bottom: 1.5vh;
+  font-family: "Antic Slab", serif;
+  font-weight: 600;
+}
+#contact-section .row .col-sm-4 P {
+  padding-bottom: 3vh;
+}
+#contact-section .row .col-sm-4 .icon {
+  font-size: 2.5vh;
+  color: #dfb10c;
+}
+#contact-section .row .col-sm-4 .contact-icons {
+  padding-top: 9.5vh;
+  word-spacing: 10px;
+}
+#contact-section .row .col-sm-4 .contact-icons .fa-brands {
+  font-size: 3vh;
+  padding: 1vh;
+}
+#contact-section .row .col-sm-4 .contact-icons .fa-brands:hover {
+  background-color: #dfb10c;
+  border-radius: 6vh;
+}
+#contact-section .row .col-sm-8 .col-sm-6 {
+  padding-left: 8vh;
+}
+#contact-section .row .col-sm-8 .col-sm-6 label {
+  padding-bottom: 4vh;
+  color: #fff;
+  font-family: "Antic Slab", serif;
+  font-size: 25px;
+}
+#contact-section .row .col-sm-8 .col-sm-6 .top-padding {
+  padding-top: 8vh;
+}
+#contact-section .row .col-sm-8 .col-sm-6 input {
+  border: none;
+  background-color: #000;
+  border-bottom: 1px solid #dfb10c;
+}
+#contact-section .row .col-sm-8 .message {
+  padding-left: 7vh;
+}
+#contact-section .row .col-sm-8 .top-padding {
+  padding-top: 8vh;
+}
+#contact-section .row .col-sm-8 input {
+  border: none;
+  border-bottom: 1px solid #dfb10c;
+  background-color: #000;
+}
+#contact-section .row .col-sm-8 label {
+  padding-bottom: 4vh;
+  color: #fff;
+  font-family: "Antic Slab", serif;
+  font-size: 25px;
+}
+#contact-section .row .col-sm-8 .send-btn {
+  padding-top: 8vh;
+  text-align: right;
 }
 
 @media only screen and (max-width: 320px) {
@@ -210,6 +295,24 @@
   #skill-section .skill-page .skill-icon {
     margin-left: 0px;
   }
+  #contact-section .sec-2 .col-sm-6 {
+    padding-left: 3vh !important;
+  }
+  #contact-section .sec-2 .col-sm-6 input {
+    width: 35vh !important;
+  }
+  #contact-section .sec-2 .col-sm-6 label {
+    padding-top: 5vh;
+  }
+  #contact-section .sec-2 .message {
+    padding-left: 2vh !important;
+  }
+  #contact-section .sec-2 input {
+    width: 35vh !important;
+  }
+  #contact-section .sec-2 .send-btn {
+    margin-right: 7px;
+  }
 }
 @media (min-width: 321px) and (max-width: 375px) {
   .name {
@@ -255,6 +358,24 @@
   #skill-section .skill-page .skill-icon {
     margin-left: 0px;
   }
+  #contact-section .sec-2 .col-sm-6 {
+    padding-left: 5vh !important;
+  }
+  #contact-section .sec-2 .col-sm-6 input {
+    width: 36vh !important;
+  }
+  #contact-section .sec-2 .col-sm-6 label {
+    padding-top: 6vh;
+  }
+  #contact-section .sec-2 .message {
+    padding-left: 3vh !important;
+  }
+  #contact-section .sec-2 input {
+    width: 37vh !important;
+  }
+  #contact-section .sec-2 .send-btn {
+    margin-right: 22px;
+  }
 }
 @media (min-width: 376px) and (max-width: 425px) {
   .name {
@@ -297,6 +418,34 @@
   #skill-section .skill-page .skill-icon {
     margin-left: 0px;
   }
+  #contact-section .sec-1 {
+    padding: 3vh !important;
+  }
+  #contact-section .sec-1 p {
+    padding-bottom: 5vh !important;
+    font-size: 11px;
+  }
+  #contact-section .sec-1 .contact-icons {
+    padding-top: 5.5vh !important;
+  }
+  #contact-section .sec-2 .col-sm-6 {
+    padding-left: 5vh !important;
+  }
+  #contact-section .sec-2 .col-sm-6 input {
+    width: 43vh !important;
+  }
+  #contact-section .sec-2 .col-sm-6 label {
+    padding-top: 6vh;
+  }
+  #contact-section .sec-2 .message {
+    padding-left: 3vh !important;
+  }
+  #contact-section .sec-2 input {
+    width: 43vh !important;
+  }
+  #contact-section .sec-2 .send-btn {
+    margin-right: 28px;
+  }
 }
 @media (min-width: 426px) and (max-width: 768px) {
   .name {
@@ -338,6 +487,22 @@
     margin-left: 50px;
     font-size: 70px;
   }
+  #contact-section .sec-1 {
+    padding: 3vh !important;
+  }
+  #contact-section .sec-1 p {
+    padding-bottom: 5vh !important;
+    font-size: 11px;
+  }
+  #contact-section .sec-1 .contact-icons {
+    padding-top: 5.5vh !important;
+  }
+  #contact-section .sec-2 .col-sm-6 input {
+    width: 20vh !important;
+  }
+  #contact-section .sec-2 input {
+    width: 50vh !important;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .name {
@@ -370,6 +535,24 @@
   }
   #about-section .img-section p {
     font-size: 25px !important;
+  }
+  #contact-section .sec-1 {
+    padding: 3vh !important;
+  }
+  #contact-section .sec-1 h2 {
+    padding-bottom: 2.5vh !important;
+  }
+  #contact-section .sec-1 p {
+    padding-bottom: 5vh !important;
+  }
+  #contact-section .sec-1 .contact-icons {
+    padding-top: 5.5vh !important;
+  }
+  #contact-section .sec-2 .col-sm-6 input {
+    width: 30vh !important;
+  }
+  #contact-section .sec-2 input {
+    width: 70vh !important;
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
