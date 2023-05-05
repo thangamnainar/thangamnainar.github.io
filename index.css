@@ -16,7 +16,7 @@ body {
   background-color: #000;
 }
 
-span:hover {
+span {
   border-bottom: 2px solid #dfb10c;
   transition: 0.9s ease;
   padding: 10px;
@@ -120,7 +120,15 @@ span:hover {
   font-size: 18px;
 }
 #about-section .about-page .intro .about-btn {
-  padding-top: 40px;
+  padding-top: 70px;
+}
+#about-section .about-page .intro .about-btn .btn-warning {
+  background-color: #000;
+  color: #dfb10c;
+}
+#about-section .about-page .intro .about-btn .btn-warning:hover {
+  background-color: #dfb10c;
+  color: #000;
 }
 #about-section .about-page .img-section {
   text-align: center;
@@ -160,12 +168,11 @@ span:hover {
   padding-bottom: 80px;
 }
 
-#projects {
-  height: 100vh;
-}
 #projects .container .row {
   -moz-column-gap: 18vh;
        column-gap: 18vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 #projects .container .row .card {
   padding: 10px;
@@ -177,7 +184,6 @@ span:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #2c73df;
 }
 #projects .container .card .image img {
   position: absolute;
@@ -206,12 +212,10 @@ span:hover {
 }
 #projects .container .card .slide.slide2 {
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  transition: 0.8s;
   transform: translateY(-100px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
@@ -228,7 +232,6 @@ span:hover {
   left: 50%;
   left: 50%;
   transform: translateX(-50%);
-  background: #2c73df;
 }
 #projects .container .card .slide.slide2 .content p {
   margin: 0;
@@ -244,10 +247,15 @@ span:hover {
   padding-top: 14vh;
   padding-left: 20vh;
 }
-
-#contact-section {
-  background-color: #000;
+#projects .read-btn .btn-warning {
+  background-color: #333;
+  color: #dfb10c;
 }
+#projects .read-btn .btn-warning:hover {
+  background-color: #dfb10c;
+  color: #000;
+}
+
 #contact-section .last-child {
   font-size: 2.5vh;
   color: #fff;
@@ -275,7 +283,7 @@ span:hover {
   color: #dfb10c;
 }
 #contact-section .row .col-sm-4 .contact-icons {
-  padding-top: 9.5vh;
+  padding-top: 12.5vh;
   word-spacing: 10px;
 }
 #contact-section .row .col-sm-4 .contact-icons .fa-brands {
@@ -300,6 +308,7 @@ span:hover {
 }
 #contact-section .row .col-sm-8 .col-sm-6 input {
   border: none;
+  color: #fff;
   background-color: #000;
   border-bottom: 1px solid #dfb10c;
 }
@@ -311,6 +320,7 @@ span:hover {
 }
 #contact-section .row .col-sm-8 input {
   border: none;
+  color: #fff;
   border-bottom: 1px solid #dfb10c;
   background-color: #000;
 }
@@ -323,6 +333,14 @@ span:hover {
 #contact-section .row .col-sm-8 .send-btn {
   padding-top: 8vh;
   text-align: right;
+}
+#contact-section .row .col-sm-8 .send-btn .btn-warning {
+  background-color: #000;
+  color: #dfb10c;
+}
+#contact-section .row .col-sm-8 .send-btn .btn-warning:hover {
+  background-color: #dfb10c;
+  color: #000;
 }
 
 @media only screen and (max-width: 320px) {
@@ -369,6 +387,19 @@ span:hover {
   }
   #skill-section .skill-page .skill-icon {
     margin-left: 0px;
+  }
+  #projects .container .row {
+    padding-bottom: 0px;
+  }
+  #projects .container .row .card {
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+  #projects .read-btn {
+    padding: 0px;
+  }
+  #contact-section .heading {
+    padding: 0%;
   }
   #contact-section .sec-2 .col-sm-6 {
     padding-left: 3vh !important;
@@ -433,6 +464,16 @@ span:hover {
   #skill-section .skill-page .skill-icon {
     margin-left: 0px;
   }
+  #projects .container .row {
+    padding-bottom: 0px;
+  }
+  #projects .container .row .card {
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+  #projects .read-btn {
+    padding: 0px;
+  }
   #contact-section .sec-2 .col-sm-6 {
     padding-left: 5vh !important;
   }
@@ -492,6 +533,13 @@ span:hover {
   }
   #skill-section .skill-page .skill-icon {
     margin-left: 0px;
+  }
+  #projects .container .row .card {
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+  #projects .read-btn {
+    padding: 0px;
   }
   #contact-section .sec-1 {
     padding: 3vh !important;
@@ -562,6 +610,26 @@ span:hover {
     margin-left: 50px;
     font-size: 70px;
   }
+  #projects .container .row {
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  #projects .container .card {
+    width: 28vh;
+  }
+  #projects .container .card .slide.slide1 {
+    width: 26vh;
+  }
+  #projects .container .card .slide.slide2 {
+    width: 26vh;
+  }
+  #projects .container .card .image {
+    width: 26vh;
+  }
+  #projects .read-btn {
+    padding-top: 8vh;
+    padding-left: 10vh;
+  }
   #contact-section .sec-1 {
     padding: 3vh !important;
   }
@@ -589,6 +657,7 @@ span:hover {
   }
   .navbar {
     padding-left: 0% !important;
+    width: 125vh !important;
   }
   .navbar .navbar-brand {
     font-size: 35px !important;
@@ -610,6 +679,23 @@ span:hover {
   }
   #about-section .img-section p {
     font-size: 25px !important;
+  }
+  #projects .container .row {
+    -moz-column-gap: 15vh;
+         column-gap: 15vh;
+  }
+  #projects .container .card .slide.slide1 {
+    width: 28vh;
+  }
+  #projects .container .card .slide.slide2 {
+    width: 102%;
+  }
+  #projects .container .card .image {
+    width: 28vh;
+  }
+  #projects .read-btn {
+    padding-top: 12vh;
+    padding-left: 12vh;
   }
   #contact-section .sec-1 {
     padding: 3vh !important;

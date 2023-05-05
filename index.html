@@ -166,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide slide2">
+                    <div class="slide slide2">  
                         <div class="content">
                             <h2>First Project</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio alias, vel doloremque
@@ -240,27 +240,29 @@
                     </div>
                 </div>
                 <div class="col-sm-8 sec-2">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <label for="inputFirstName">First Name </label>
-                            <input type="text" id="inputFirstName" size="30"><br>
-                            <label for="inputMail" class="top-padding"> Mail</label><br>
-                            <input type="text" id="inputMail" size="30">
+                    <form action="" id="myForm">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="inputFirstName">First Name </label>
+                                <input type="text" id="inputFirstName" size="30"><br>
+                                <label for="inputMail" class="top-padding"> Mail</label><br>
+                                <input type="text" id="inputMail" size="30">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputLastName" class="lable">Last Name</label>
+                                <input type="text" id="inputLastName" size="30"><br>
+                                <label for="phoneNumber" class="top-padding">Phone</label><br>
+                                <input type="text" id="phoneNumber" placeholder="  +123 456 78 90" size="30">
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <label for="inputLastName" class="lable">Last Name</label>
-                            <input type="text" id="inputLastName" size="30"><br>
-                            <label for="phoneNumber" class="top-padding">Phone</label><br>
-                            <input type="text" id="phoneNumber" placeholder="  +123 456 78 90" size="30">
+                        <div class="message">
+                            <label for="message" class="top-padding">Message </label><br>
+                            <input type="text" id="message" placeholder="    Write your message" size="74">
                         </div>
-                    </div>
-                    <div class="message">
-                        <label for="message" class="top-padding">Message </label><br>
-                        <input type="text" id="message" placeholder="    Write your message" size="74">
-                    </div>
-                    <div class="send-btn">
-                        <button type="button" class="btn btn-warning">Send Message</button>
-                    </div>
+                        <div class="send-btn">
+                            <button type="submit" class="btn btn-warning">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,27 +1,30 @@
-$textcolor: #dfb10c;
+$yellow_color: #dfb10c;
+$black_color:#000;
+$white_color:#fff;
+$black_light_color:#333;
 
 * {
     padding: 0%;
     margin: 0%;
 }
 
-// about skill contact
+// about skill contact heading
 
 .heading {
     padding-top: 40px;
     text-align: center;
     font-family: 'Noto Serif JP', serif;
-    color: #fff;
+    color: $white_color;
     font-size: 55px;
     font-weight: 800;
 }
 
 body {
-    background-color: #000;
+    background-color: $black_color;
 }
 
-span:hover {
-    border-bottom: 2px solid $textcolor;
+span {
+    border-bottom: 2px solid $yellow_color;
     transition: 0.9s ease;
     padding: 10px;
 }
@@ -32,19 +35,17 @@ span:hover {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-    // position: relative;
 
     .name {
-        color: #fff;
+        color: $white_color;
         text-align: center;
         padding-top: 275px;
         padding-bottom: 0px;
-        // font-family: 'Monoton', cursive;
         font-size: 140PX;
     }
 
     .dev {
-        color: #fff;
+        color: $white_color;
         text-align: center;
         padding-bottom: 280px;
         font-size: 40PX;
@@ -53,26 +54,19 @@ span:hover {
     nav {
         position: fixed;
         padding-top: 20px;
-        // padding-bottom: 50px;
-        // padding-left: 20px;
-        // position: fixed;
-        // top: 10px;
         width: 100%;
-        // height: 50px;
-        // background-color: #e4f500; /* set default background color */
         transition: background-color 0.5s ease-in-out;
 
         .navbar-brand {
             font-family: 'Chivo Mono', monospace;
             font-family: 'Rubik Wet Paint', cursive;
             font-size: 40px;
-            // letter-spacing: 10px;
             color: #66d9ed;
         }
 
         .navbar-toggler {
-            color: #fff;
-            background-color: $textcolor;
+            color: $white_color;
+            background-color: $yellow_color;
         }
 
         .navbar-collapse {
@@ -83,8 +77,8 @@ span:hover {
                     font-family: 'Chivo Mono', monospace;
                     font-family: 'Roboto Mono', monospace;
                     font-size: 20px;
-                    color: $textcolor ;
-                    // background-color: #000;
+                    color: $yellow_color ;
+                    // background-color: $black_color;
                 }
             }
         }
@@ -100,8 +94,8 @@ span:hover {
         padding-bottom: 0px;
 
         .nav-link {
-            color: $textcolor !important;
-            // background-color: #000;  
+            color: $yellow_color !important;
+            // background-color: $black_color;  
         }
 
         .navbar-brand {
@@ -114,7 +108,7 @@ span:hover {
 @media (max-width:768px) {
     nav.scrolled {
         .nav-link {
-            background-color: #000;
+            background-color: $black_color;
         }
     }
 }
@@ -122,7 +116,7 @@ span:hover {
 // about section
 
 #about-section {
-    // background-color: #000;
+    // background-color: $black_color;
     // height: 100vh;
 
     .about-page {
@@ -133,7 +127,7 @@ span:hover {
 
         .fa-brands {
             font-size: 40px;
-            color: $textcolor;
+            color: $yellow_color;
             letter-spacing: 20px;
         }
 
@@ -142,7 +136,7 @@ span:hover {
             // padding-left: 35px;
 
             .intro-name {
-                color: $textcolor;
+                color: $yellow_color;
                 font-family: 'Noto Serif JP', serif;
                 font-weight: 20px;
                 font-size: 60px;
@@ -151,25 +145,32 @@ span:hover {
 
             .intro-para {
                 font-size: 25px;
-                color: #fff;
+                color: $white_color;
                 line-height: 2;
                 padding-bottom: 30px;
                 font-family: 'Antic Slab', serif;
             }
 
             .box {
-                border: 1px solid $textcolor;
+                border: 1px solid $yellow_color;
                 padding: 20px;
-                color: #fff;
+                color: $white_color;
                 font-family: 'Antic Slab', serif;
                 font-size: 18px;
             }
 
             .about-btn {
-                padding-top: 40px;
-                // padding-bottom: 110px;
+                padding-top: 70px;
 
+                .btn-warning {
+                    background-color: $black_color;
+                    color: $yellow_color;
+                }
 
+                .btn-warning:hover {
+                    background-color: $yellow_color;
+                    color: $black_color;
+                }
 
             }
 
@@ -186,7 +187,7 @@ span:hover {
             p {
                 // padding-left: 140px;
                 padding-top: 50px;
-                color: #fff;
+                color: $white_color;
                 font-size: 30px;
                 /* width: 670px; */
                 /* height: 810px; */
@@ -205,15 +206,15 @@ span:hover {
 
 #skill-section {
     // height: 100vh;
-    // background-color: #000;
+    // background-color: $black_color;
 
     .skill-page {
 
         .skill-icon {
             text-align: center;
-            color: #fff;
+            color: $white_color;
 
-            background-color: #333;
+            background-color: $black_light_color;
             // border: 2px solid yellow;
             border-radius: 20px;
             font-size: 80px;
@@ -223,7 +224,7 @@ span:hover {
             padding-bottom: 70px;
 
             h1 {
-                color: #fff;
+                color: $white_color;
                 padding-bottom: 50px;
                 padding-top: 20px;
                 // font-family: 'Roboto Slab', serif;
@@ -244,183 +245,107 @@ span:hover {
 // project-section
 
 #projects {
-    height: 100vh;
-    //    .row{
-    // padding-top: 5vh;
-    // .col-sm-3{
-    //     // border: 2px solid #dfb10c;
-    //     background-color: #333;
-    //     padding-left: 0%;
-    //     padding-right: 0%;
-    //     margin-left: 10vh;
-
-    //     img{
-    //         height: 23vh;
-    //     }
-
-    //     h2{
-    //         color: #fff;
-    //         padding-top: 3vh;
-    //         text-align: center;
-    //     }
-    //     p{
-    //         color: #fff;
-    //         line-height: 4vh;
-    //         padding: 2vh;
-    //     }
-    //     }
-    //    }
     .container {
-        .row{
+        .row {
             column-gap: 18vh;
-            .card{
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            .card {
                 padding: 10px;
-                background-color: #333;
+                background-color: $black_light_color;
             }
         }
     }
+
     .container .card .image {
-
         position: absolute;
-
         top: 0;
-
         left: 0;
-
         width: 100%;
-
         height: 100%;
-
-        background: #2c73df;
-
     }
 
     .container .card .image img {
-
         position: absolute;
-
         top: 50%;
-
         left: 50%;
         width: 298px;
         height: 200px;
-
         transform: translate(-50%, -50%);
-
-
-
     }
 
     .container .card .slide {
-
         width: 300px;
-
         height: 200px;
-
         transition: 0.5s;
-
     }
 
     .container .card .slide.slide1 {
-
         position: relative;
-
         display: flex;
-
         justify-content: center;
-
         align-items: center;
-
         z-index: 1;
-
         transition: .7s;
-
         transform: translateY(100px);
-
     }
 
     .container .card:hover .slide.slide1 {
-
         transform: translateY(0px);
-
     }
 
     .container .card .slide.slide2 {
-
         position: relative;
-
-        display: flex;
-
         justify-content: center;
-
         align-items: center;
-
         padding: 20px;
-
         box-sizing: border-box;
-
-        transition: .8s;
-
         transform: translateY(-100px);
-
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-
     }
 
     .container .card:hover .slide.slide2 {
-
         transform: translateY(0);
-        background-color: #fff;
-
-
+        background-color: $white_color;
     }
 
     .container .card .slide.slide2::after {
-
         content: "";
-
         position: absolute;
-
         width: 30px;
-
         height: 4px;
-
         bottom: 15px;
-
         left: 50%;
-
         left: 50%;
-
         transform: translateX(-50%);
-
-        background: #2c73df;
-
     }
 
     .container .card .slide.slide2 .content p {
-
         margin: 0;
-
         padding: 0;
-
         color: #414141;
-
     }
 
     .container .card .slide2 .content h2 {
-
-
         font-size: 24px;
-
         text-align: center;
-
-        color: $textcolor;
-
+        color: $yellow_color;
     }
 
     .read-btn {
         padding-top: 14vh;
         padding-left: 20vh;
+
+        .btn-warning {
+            background-color: $black_light_color;
+            color: $yellow_color;
+        }
+
+        .btn-warning:hover {
+            background-color: $yellow_color;
+            color: $black_color;
+        }
     }
 }
 
@@ -428,11 +353,11 @@ span:hover {
 
 #contact-section {
     // height: 100vh;
-    background-color: #000;
+    // background-color: $black_color;
 
     .last-child {
         font-size: 2.5vh;
-        color: #fff;
+        color: $white_color;
     }
 
     .row {
@@ -440,8 +365,8 @@ span:hover {
         padding-bottom: 50px;
 
         .col-sm-4 {
-            background-color: #333;
-            color: #fff;
+            background-color: $black_light_color;
+            color: $white_color;
             border-radius: 20px;
             padding: 7vh;
             // font-family: 'Antic Slab', serif;
@@ -458,11 +383,11 @@ span:hover {
 
             .icon {
                 font-size: 2.5vh;
-                color: $textcolor;
+                color: $yellow_color;
             }
 
             .contact-icons {
-                padding-top: 9.5vh;
+                padding-top: 12.5vh;
                 word-spacing: 10px;
 
                 .fa-brands {
@@ -471,7 +396,7 @@ span:hover {
                 }
 
                 .fa-brands:hover {
-                    background-color: $textcolor;
+                    background-color: $yellow_color;
                     border-radius: 6vh;
 
                 }
@@ -485,7 +410,7 @@ span:hover {
 
                 label {
                     padding-bottom: 4vh;
-                    color: #fff;
+                    color: $white_color;
                     font-family: 'Antic Slab', serif;
                     font-size: 25px;
                 }
@@ -496,8 +421,9 @@ span:hover {
 
                 input {
                     border: none;
-                    background-color: #000;
-                    border-bottom: 1px solid $textcolor;
+                    color: $white_color;
+                    background-color: $black_color;
+                    border-bottom: 1px solid $yellow_color;
                 }
             }
 
@@ -512,20 +438,31 @@ span:hover {
 
             input {
                 border: none;
-                border-bottom: 1px solid $textcolor;
-                background-color: #000;
+                color: $white_color;
+                border-bottom: 1px solid $yellow_color;
+                background-color: $black_color;
             }
 
             label {
                 padding-bottom: 4vh;
-                color: #fff;
+                color: $white_color;
                 font-family: 'Antic Slab', serif;
                 font-size: 25px;
             }
 
             .send-btn {
                 padding-top: 8vh;
-                text-align: right
+                text-align: right;
+
+                .btn-warning {
+                    background-color: $black_color;
+                    color: $yellow_color;
+                }
+
+                .btn-warning:hover {
+                    background-color: $yellow_color;
+                    color: $black_color;
+                }
             }
         }
 
@@ -616,9 +553,29 @@ span:hover {
         }
     }
 
-    #contact-section {
+    #projects {
+        .container {
+            .row {
+                padding-bottom: 0px;
 
-        // height: 225vh;
+                .card {
+                    align-items: center;
+                    margin-bottom: 10vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding: 0px;
+        }
+
+    }
+
+    #contact-section {
+        .heading {
+            padding: 0%;
+        }
+
         .sec-2 {
             .col-sm-6 {
                 padding-left: 3vh !important;
@@ -728,9 +685,26 @@ span:hover {
         }
     }
 
+    #projects {
+        .container {
+            .row {
+                padding-bottom: 0px;
+
+                .card {
+                    align-items: center;
+                    margin-bottom: 10vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding: 0px;
+        }
+
+    }
+
     #contact-section {
 
-        // height: 225vh;
         .sec-2 {
             .col-sm-6 {
                 padding-left: 5vh !important;
@@ -838,9 +812,24 @@ span:hover {
         }
     }
 
+    #projects {
+        .container {
+            .row {
+                .card {
+                    align-items: center;
+                    margin-bottom: 10vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding: 0px;
+        }
+
+    }
+
     #contact-section {
 
-        // height: 215vh;
         .sec-1 {
             padding: 3vh !important;
 
@@ -951,6 +940,35 @@ span:hover {
         }
     }
 
+    #projects {
+        .container {
+            .row {
+                column-gap: 3vh;
+            }
+
+            .card {
+                width: 28vh;
+
+                .slide.slide1 {
+                    width: 26vh;
+                }
+
+                .slide.slide2 {
+                    width: 26vh;
+                }
+
+                .image {
+                    width: 26vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding-top: 8vh;
+            padding-left: 10vh;
+        }
+    }
+
     #contact-section {
         .sec-1 {
             padding: 3vh !important;
@@ -997,6 +1015,7 @@ span:hover {
 
     .navbar {
         padding-left: 0% !important;
+        width: 125vh !important;
 
         .navbar-brand {
             font-size: 35px !important;
@@ -1035,11 +1054,33 @@ span:hover {
         }
     }
 
-    #projects{
-        .container{
-            
+    #projects {
+        .container {
+            .row {
+                column-gap: 15vh;
+            }
+
+            .card {
+                .slide.slide1 {
+                    width: 28vh;
+                }
+
+                .slide.slide2 {
+                    width: 102%;
+                }
+
+                .image {
+                    width: 28vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding-top: 12vh;
+            padding-left: 12vh;
         }
     }
+
     #contact-section {
         .sec-1 {
             padding: 3vh !important;
@@ -1107,7 +1148,5 @@ span:hover {
         }
     }
 
-    #projects {
-       
-    }
+
 }

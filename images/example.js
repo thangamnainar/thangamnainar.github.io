@@ -1,79 +1,75 @@
-// Define the data for the infographic
-const data = [  { year: 2010, skills: ['HTML', 'CSS', 'JavaScript'] },
-  { year: 2012, skills: ['HTML', 'CSS', 'JavaScript', 'jQuery'] },
-  { year: 2014, skills: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'AngularJS'] },
-  { year: 2016, skills: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'AngularJS', 'React'] },
-  { year: 2018, skills: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'AngularJS', 'React', 'Vue.js'] },
-  { year: 2020, skills: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'AngularJS', 'React', 'Vue.js', 'Node.js'] },
-];
+function validateForm() {
+  // Get form inputs
+  var firstName = document.getElementById("inputFirstName");
+  var lastName = document.getElementById("inputLastName");
+  var email = document.getElementById("inputMail");
+  var phone = document.getElementById("phoneNumber");
+  var message = document.getElementById("message");
 
-// Define the dimensions of the infographic
-const width = 800;
-const height = 400;
-const margin = { top: 20, right: 20, bottom: 20, left: 40 };
-const innerWidth = width - margin.left - margin.right;
-const innerHeight = height - margin.top - margin.bottom;
+  // Validate first name
+  if (firstName.value == "") {
+    alert("Please enter your first name.");
+    firstName.focus();
+    return false;
+  }
 
-// Create the SVG element
-const svg = d3.select('#infographic')
-  .append('svg')
-  .attr('width', width)
-  .attr('height', height);
+  // Validate last name
+  if (lastName.value == "") {
+    alert("Please enter your last name.");
+    lastName.focus();
+    return false;
+  }
 
-// Create the x-scale
-const xScale = d3.scaleLinear()
-  .domain([2010, 2020])
-  .range([0, innerWidth]);
+  // Validate email
+  if (email.value == "") {
+    alert("Please enter your email.");
+    email.focus();
+    return false;
+  } else {
+    // Check email format
+    var emailRegex = /^\S+@\S+\.\S+$/;
+    if (!emailRegex.test(email.value)) {
+      alert("Please enter a valid email.");
+      email.focus();
+      return false;
+    }
+  }
 
-// Create the y-scale
-const yScale = d3.scaleBand()
-  .domain(data.map(d => d.year))
-  .range([0, innerHeight])
-  .padding(0.2);
+  // Validate phone number
+  if (phone.value == "") {
+    alert("Please enter your phone number.");
+    phone.focus();
+    return false;
+  } else {
+    // Check phone number format
+    var phoneRegex = /\d{1,3} \d{3} \d{2} \d{2}$/;
+    if (!phoneRegex.test(phone.value)) {
+      alert("Please enter a valid phone number (e.g. +123 456 78 90).");
+      phone.focus();
+      return false;
+    }
+  }
 
-// Create the x-axis
-const xAxis = d3.axisBottom(xScale)
-  .ticks(6)
-  .tickFormat(d => d.toString());
+  // Validate message
+  if (message.value == "") {
+    alert("Please enter a message.");
+    message.focus();
+    return false;
+  }
 
-// Create the y-axis
-const yAxis = d3.axisLeft(yScale)
-  .tickSize(0);
+  // If all inputs are valid, return true
+  alert("Thank you for your submission!");
+  return true;
+}
 
-// Add the x-axis to the SVG element
-svg.append('g')
-  .attr('class', 'x-axis')
-  .attr('transform', `translate(${margin.left}, ${innerHeight + margin.top})`)
-  .call(xAxis);
+// Add form submit event listener
+// Get form element
+var myForm = document.getElementById("myForm");
 
-// Add the y-axis to the SVG element
-svg.append('g')
-  .attr('class', 'y-axis')
-  .attr('transform', `translate(${margin.left}, ${margin.top})`)
-  .call(yAxis);
-
-// Add the bars to the SVG element
-svg.selectAll('.bar')
-  .data(data)
-  .enter()
-  .append('rect')
-  .attr('class', 'bar')
-  .attr('x', margin.left)
-  .attr('y', d => yScale(d.year) + margin.top)
-  .attr('width', d => xScale(d.skills.length))
-  .attr('height', yScale.bandwidth())
-  .attr('fill', '#00bfff')
-  .on('mouseover', function (d) {
-    d3.select(this).attr('fill', '#ff8c00');
-  })
-  .on('mouseout', function (d) {
-    d3.select(this).attr('fill', '#00bfff');
-  });
-
-// Add the labels to the bars
-svg.selectAll('.label')
-  .data(data)
-  .enter()
-  .append('text')
-  
-
+// Add form submit event listener
+myForm.addEventListener("submit", function(event) {
+  // Prevent form submission if inputs are invalid
+  if (!validateForm()) {
+    event.preventDefault();
+  }
+});
