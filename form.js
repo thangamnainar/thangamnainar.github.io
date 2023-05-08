@@ -1,8 +1,8 @@
 function validateForm() {
   // Get form inputs
-  var firstName = document.getElementById("inputFirstName");
-  var lastName = document.getElementById("inputLastName");
-  var email = document.getElementById("inputMail");
+  var firstName = document.getElementById("firstName");
+  var lastName = document.getElementById("lastName");
+  var email = document.getElementById("email");
   var phone = document.getElementById("phoneNumber");
   var message = document.getElementById("message");
 
@@ -58,8 +58,7 @@ function validateForm() {
   }
 
   // If all inputs are valid, return true
-  alert("Thank you for your submission!");
-  return true;
+  return getData();
 }
 
 // Add form submit event listener
@@ -67,9 +66,33 @@ function validateForm() {
 var myForm = document.getElementById("myForm");
 
 // Add form submit event listener
-myForm.addEventListener("submit", function(event) {
+myForm.addEventListener("submit", function (event) {
   // Prevent form submission if inputs are invalid
   if (!validateForm()) {
     event.preventDefault();
   }
 });
+
+
+// get data from user
+function getData() {
+  const form = document.querySelector('#myForm');
+
+    const firstName = document.querySelector('#firstName').value;
+    const lastName = document.querySelector('#lastName').value;
+    const email = document.querySelector('#email').value;
+    const phone = document.querySelector('#phoneNumber').value;
+    const message = document.querySelector('#message').value;
+
+    const userData = {
+      firstName,
+      lastName,
+      email,
+      phone,
+      message,
+    };
+
+    localStorage.setItem('userData', JSON.stringify(userData));
+
+    window.location.href = 'form2.html';
+}

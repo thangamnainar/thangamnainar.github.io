@@ -288,6 +288,7 @@ span {
 }
 #contact-section .row .col-sm-4 .contact-icons .fa-brands {
   font-size: 3vh;
+  color: #fff;
   padding: 1vh;
 }
 #contact-section .row .col-sm-4 .contact-icons .fa-brands:hover {
