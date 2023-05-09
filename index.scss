@@ -254,6 +254,7 @@ span {
             .card {
                 padding: 10px;
                 background-color: $black_light_color;
+                border-radius: 20px;
             }
         }
     }
@@ -336,6 +337,7 @@ span {
     .read-btn {
         padding-top: 14vh;
         padding-left: 20vh;
+        padding-bottom: 3vh;
 
         .btn-warning {
             background-color: $black_light_color;
@@ -471,7 +473,29 @@ span {
 
 }
 
+// footer section
 
+footer{
+    .container{ 
+        color: $white_color;
+        font-family: 'Antic Slab', serif;
+        text-align: center;
+        background-color: $black_light_color;
+        border-radius: 20px;
+        
+        h3{
+            letter-spacing: 4px;
+            padding-top: 5vh;
+            padding-bottom: 1vh;
+        }
+        p{
+            padding-bottom: 5vh
+        }
+        .fa-sharp {
+            color: $yellow_color;
+        }
+    }
+}
 
 // responsive in mobile Small 320px
 
@@ -517,7 +541,7 @@ span {
 
     #about-section {
 
-        // height: 174vh;
+        padding-bottom: 16vh ;
         .intro {
             .box {
                 font-size: 14px !important;
@@ -816,6 +840,7 @@ span {
     #projects {
         .container {
             .row {
+                padding-bottom: 0px !important;
                 .card {
                     align-items: center;
                     margin-bottom: 10vh;
@@ -944,7 +969,7 @@ span {
     #projects {
         .container {
             .row {
-                column-gap: 3vh;
+                column-gap: 7vh;
             }
 
             .card {
@@ -956,6 +981,11 @@ span {
 
                 .slide.slide2 {
                     width: 26vh;
+                    .content{
+                        p{
+                            font-size: 13px;
+                        }
+                    }
                 }
 
                 .image {
@@ -966,7 +996,7 @@ span {
 
         .read-btn {
             padding-top: 8vh;
-            padding-left: 10vh;
+                        padding-left: 8vh !important;
         }
     }
 

@@ -177,6 +177,7 @@ span {
 #projects .container .row .card {
   padding: 10px;
   background-color: #333;
+  border-radius: 20px;
 }
 #projects .container .card .image {
   position: absolute;
@@ -246,6 +247,7 @@ span {
 #projects .read-btn {
   padding-top: 14vh;
   padding-left: 20vh;
+  padding-bottom: 3vh;
 }
 #projects .read-btn .btn-warning {
   background-color: #333;
@@ -344,6 +346,25 @@ span {
   color: #000;
 }
 
+footer .container {
+  color: #fff;
+  font-family: "Antic Slab", serif;
+  text-align: center;
+  background-color: #333;
+  border-radius: 20px;
+}
+footer .container h3 {
+  letter-spacing: 4px;
+  padding-top: 5vh;
+  padding-bottom: 1vh;
+}
+footer .container p {
+  padding-bottom: 5vh;
+}
+footer .container .fa-sharp {
+  color: #dfb10c;
+}
+
 @media only screen and (max-width: 320px) {
   .name {
     font-size: 35px !important;
@@ -367,6 +388,9 @@ span {
   }
   .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link {
     font-size: 13px !important;
+  }
+  #about-section {
+    padding-bottom: 16vh;
   }
   #about-section .intro .box {
     font-size: 14px !important;
@@ -535,6 +559,9 @@ span {
   #skill-section .skill-page .skill-icon {
     margin-left: 0px;
   }
+  #projects .container .row {
+    padding-bottom: 0px !important;
+  }
   #projects .container .row .card {
     align-items: center;
     margin-bottom: 10vh;
@@ -612,8 +639,8 @@ span {
     font-size: 70px;
   }
   #projects .container .row {
-    -moz-column-gap: 3vh;
-         column-gap: 3vh;
+    -moz-column-gap: 7vh;
+         column-gap: 7vh;
   }
   #projects .container .card {
     width: 28vh;
@@ -624,12 +651,15 @@ span {
   #projects .container .card .slide.slide2 {
     width: 26vh;
   }
+  #projects .container .card .slide.slide2 .content p {
+    font-size: 13px;
+  }
   #projects .container .card .image {
     width: 26vh;
   }
   #projects .read-btn {
     padding-top: 8vh;
-    padding-left: 10vh;
+    padding-left: 8vh !important;
   }
   #contact-section .sec-1 {
     padding: 3vh !important;
