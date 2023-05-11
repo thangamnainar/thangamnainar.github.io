@@ -643,19 +643,19 @@ footer .container .fa-sharp {
          column-gap: 7vh;
   }
   #projects .container .card {
-    width: 28vh;
+    width: 31vh;
   }
   #projects .container .card .slide.slide1 {
-    width: 26vh;
+    width: 27.5vh;
   }
   #projects .container .card .slide.slide2 {
-    width: 26vh;
+    width: 27.5vh;
   }
   #projects .container .card .slide.slide2 .content p {
     font-size: 13px;
   }
   #projects .container .card .image {
-    width: 26vh;
+    width: 27.5vh;
   }
   #projects .read-btn {
     padding-top: 8vh;
@@ -722,7 +722,7 @@ footer .container .fa-sharp {
     width: 102%;
   }
   #projects .container .card .image {
-    width: 28vh;
+    width: 34vh;
   }
   #projects .read-btn {
     padding-top: 12vh;
@@ -766,5 +766,8 @@ footer .container .fa-sharp {
   }
   .navbar .navbar-collapse .navbar-nav .nav-link {
     font-size: 22px !important;
+  }
+  #skill-section {
+    padding-top: 25vh !important;
   }
 }/*# sourceMappingURL=index.css.map */

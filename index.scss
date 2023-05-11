@@ -973,14 +973,14 @@ footer{
             }
 
             .card {
-                width: 28vh;
+                width: 31vh;
 
                 .slide.slide1 {
-                    width: 26vh;
+                    width: 27.5vh;
                 }
 
                 .slide.slide2 {
-                    width: 26vh;
+                    width: 27.5vh;
                     .content{
                         p{
                             font-size: 13px;
@@ -989,7 +989,7 @@ footer{
                 }
 
                 .image {
-                    width: 26vh;
+                    width: 27.5vh;
                 }
             }
         }
@@ -1101,7 +1101,7 @@ footer{
                 }
 
                 .image {
-                    width: 28vh;
+                    width: 34vh;
                 }
             }
         }
@@ -1179,5 +1179,8 @@ footer{
         }
     }
 
+    #skill-section{
+        padding-top: 25vh !important;
+    }
 
 }
