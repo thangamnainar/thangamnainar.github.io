@@ -1,0 +1,1199 @@
+$yellow_color: #dfb10c;
+$black_color: #000;
+$white_color: #fff;
+$black_light_color: #333;
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+// about skill contact heading
+
+.heading {
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    color: $white_color;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+body {
+    background-color: $black_color;
+}
+
+span {
+    border-bottom: 2px solid $yellow_color;
+    transition: 0.9s ease;
+    padding: 10px;
+}
+
+// home section
+.home-image {
+    background-image: url('./images/main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    .name {
+        color: $white_color;
+        text-align: center;
+        padding-top: 275px;
+        padding-bottom: 0px;
+        font-size: 140PX;
+    }
+
+    .dev {
+        color: $white_color;
+        text-align: center;
+        padding-bottom: 280px;
+        font-size: 40PX;
+    }
+
+    nav {
+        position: fixed;
+        padding-top: 20px;
+        width: 100%;
+        transition: background-color 0.5s ease-in-out;
+
+        .navbar-brand {
+            font-family: 'Chivo Mono', monospace;
+            font-family: 'Rubik Wet Paint', cursive;
+            font-size: 40px;
+            color: #66d9ed;
+        }
+
+        .navbar-toggler {
+            color: $white_color;
+            background-color: $yellow_color;
+        }
+
+        .navbar-collapse {
+            padding-left: 370px;
+
+            .navbar-nav {
+                .nav-link {
+                    font-family: 'Chivo Mono', monospace;
+                    font-family: 'Roboto Mono', monospace;
+                    font-size: 20px;
+                    color: $yellow_color ;
+                    // background-color: $black_color;
+                }
+            }
+        }
+    }
+
+    nav.scrolled {
+        // background-color: #848e  7;
+        /* set background color on scroll */
+        margin-top: 0%;
+        width: 100%;
+        margin-left: -12px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        .nav-link {
+            color: $yellow_color !important;
+            // background-color: $black_color;  
+        }
+
+        .navbar-brand {
+            visibility: hidden;
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    nav.scrolled {
+        .nav-link {
+            background-color: $black_color;
+        }
+    }
+}
+
+// about section
+
+#about-section {
+    // background-color: $black_color;
+    // height: 100vh;
+
+    .about-page {
+        /* border: 10px solid yellow; */
+        height: 100vh;
+        // background-color: black;
+
+
+        .fa-brands {
+            font-size: 40px;
+            color: $yellow_color;
+            letter-spacing: 20px;
+        }
+
+        .intro {
+            padding-top: 20px;
+            // padding-left: 35px;
+
+            .intro-name {
+                color: $yellow_color;
+                font-family: 'Noto Serif JP', serif;
+                font-weight: 20px;
+                font-size: 60px;
+                padding-bottom: 20px;
+            }
+
+            .intro-para {
+                font-size: 25px;
+                color: $white_color;
+                line-height: 2;
+                padding-bottom: 30px;
+                font-family: 'Antic Slab', serif;
+            }
+
+            .box {
+                border: 1px solid $yellow_color;
+                padding: 20px;
+                color: $white_color;
+                font-family: 'Antic Slab', serif;
+                font-size: 18px;
+            }
+
+            .about-btn {
+                padding-top: 70px;
+
+                .btn-warning {
+                    background-color: $black_color;
+                    color: $yellow_color;
+                }
+
+                .btn-warning:hover {
+                    background-color: $yellow_color;
+                    color: $black_color;
+                }
+
+            }
+
+        }
+
+        .img-section {
+
+            text-align: center;
+
+            img {
+                padding-top: 20px;
+            }
+
+            p {
+                // padding-left: 140px;
+                padding-top: 50px;
+                color: $white_color;
+                font-size: 30px;
+                /* width: 670px; */
+                /* height: 810px; */
+            }
+
+            div:last-child {
+                // padding-left: 140px;
+                padding-top: 60px;
+
+            }
+        }
+    }
+}
+
+// skill-section
+
+#skill-section {
+    // height: 100vh;
+    // background-color: $black_color;
+
+    .skill-page {
+
+        .skill-icon {
+            text-align: center;
+            color: $white_color;
+
+            background-color: $black_light_color;
+            // border: 2px solid yellow;
+            border-radius: 20px;
+            font-size: 80px;
+            margin-top: 50px;
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 70px;
+
+            h1 {
+                color: $white_color;
+                padding-bottom: 50px;
+                padding-top: 20px;
+                // font-family: 'Roboto Slab', serif;
+                font-family: 'Antic Slab', serif;
+            }
+
+            // .fa-brands {
+            //     // font-size: 300px;
+            // }
+        }
+
+        .last-child {
+            padding-bottom: 80px;
+        }
+    }
+}
+
+// project-section
+
+#projects {
+    .container {
+        .row {
+            column-gap: 18vh;
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            .card {
+                padding: 10px;
+                background-color: $black_light_color;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .container .card .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .card .image img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 298px;
+        height: 200px;
+        transform: translate(-50%, -50%);
+    }
+
+    .container .card .slide {
+        width: 300px;
+        height: 200px;
+        transition: 0.5s;
+    }
+
+    .container .card .slide.slide1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transition: .7s;
+        transform: translateY(100px);
+    }
+
+    .container .card:hover .slide.slide1 {
+        transform: translateY(0px);
+    }
+
+    .container .card .slide.slide2 {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        transform: translateY(-100px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .container .card:hover .slide.slide2 {
+        transform: translateY(0);
+        background-color: $white_color;
+    }
+
+    .container .card .slide.slide2::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        bottom: 15px;
+        left: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container .card .slide.slide2 .content p {
+        margin: 0;
+        padding: 0;
+        color: #414141;
+    }
+
+    .container .card .slide2 .content h2 {
+        font-size: 24px;
+        text-align: center;
+        color: $yellow_color;
+    }
+
+    .read-btn {
+        padding-top: 14vh;
+        padding-left: 20vh;
+        padding-bottom: 3vh;
+
+        .btn-warning {
+            background-color: $black_light_color;
+            color: $yellow_color;
+        }
+
+        .btn-warning:hover {
+            background-color: $yellow_color;
+            color: $black_color;
+        }
+    }
+}
+
+// contact-section
+
+#contact-section {
+    // height: 100vh;
+    // background-color: $black_color;
+
+    .last-child {
+        font-size: 2.5vh;
+        color: $white_color;
+    }
+
+    .row {
+        margin-top: 4vh;
+        padding-bottom: 50px;
+
+        .col-sm-4 {
+            background-color: $black_light_color;
+            color: $white_color;
+            border-radius: 20px;
+            padding: 7vh;
+            // font-family: 'Antic Slab', serif;
+
+            h2 {
+                padding-bottom: 1.5vh;
+                font-family: 'Antic Slab', serif;
+                font-weight: 600;
+            }
+
+            P {
+                padding-bottom: 3vh;
+            }
+
+            .icon {
+                font-size: 2.5vh;
+                color: $yellow_color;
+            }
+
+            .contact-icons {
+                padding-top: 12.5vh;
+                word-spacing: 10px;
+
+                .fa-brands {
+                    font-size: 3vh;
+                    color: $white_color;
+                    padding: 1vh;
+                }
+
+                .fa-brands:hover {
+                    background-color: $yellow_color;
+                    border-radius: 6vh;
+
+                }
+            }
+        }
+
+        .col-sm-8 {
+
+            .col-sm-6 {
+                padding-left: 8vh;
+
+                label {
+                    padding-bottom: 4vh;
+                    color: $white_color;
+                    font-family: 'Antic Slab', serif;
+                    font-size: 25px;
+                }
+
+                .top-padding {
+                    padding-top: 8vh;
+                }
+
+                input {
+                    border: none;
+                    color: $white_color;
+                    background-color: $black_color;
+                    border-bottom: 1px solid $yellow_color;
+                }
+            }
+
+            .message {
+                padding-left: 7vh;
+            }
+
+            .top-padding {
+                padding-top: 8vh;
+                // padding-left: 8vh;
+            }
+
+            input {
+                border: none;
+                color: $white_color;
+                border-bottom: 1px solid $yellow_color;
+                background-color: $black_color;
+            }
+
+            label {
+                padding-bottom: 4vh;
+                color: $white_color;
+                font-family: 'Antic Slab', serif;
+                font-size: 25px;
+            }
+
+            .send-btn {
+                padding-top: 8vh;
+                text-align: right;
+
+                .btn-warning {
+                    background-color: $black_color;
+                    color: $yellow_color;
+                }
+
+                .btn-warning:hover {
+                    background-color: $yellow_color;
+                    color: $black_color;
+                }
+            }
+            .hidden {
+                // display: none;  
+                color: #66d9ed;
+            }
+            #thankYouMessage{
+                color: $white_color;
+            }
+        }
+
+    }
+
+}
+
+// footer section
+
+footer {
+    .container {
+        color: $white_color;
+        font-family: 'Antic Slab', serif;
+        text-align: center;
+        background-color: $black_light_color;
+        border-radius: 20px;
+
+        h3 {
+            letter-spacing: 4px;
+            padding-top: 5vh;
+            padding-bottom: 1vh;
+        }
+
+        p {
+            padding-bottom: 5vh
+        }
+
+        .fa-sharp {
+            color: $yellow_color;
+        }
+    }
+}
+
+// responsive in mobile Small 320px
+
+@media only screen and (max-width: 320px) {
+    .name {
+        font-size: 35px !important;
+        padding-top: 305px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 185px !important;
+        font-size: 12px !important;
+    }
+
+    .navbar {
+        // padding-left: 0px !important;
+
+        .container-fluid {
+            padding-right: 35px !important;
+
+            .navbar-brand {
+                font-size: 15px !important;
+                // margin-right: 130px;
+            }
+
+            .navbar-toggler {
+                font-size: 10px !important;
+            }
+
+            .navbar-collapse {
+                padding-left: 0px !important;
+
+                .navbar-nav {
+                    .nav-link {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #about-section {
+
+        padding-bottom: 16vh;
+
+        .intro {
+            .box {
+                font-size: 14px !important;
+            }
+
+            .icons {
+                padding-top: 50px !important;
+            }
+        }
+
+        .img-section {
+            img {
+                width: 260px;
+            }
+
+            p {
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    #skill-section {
+        padding-top: 585px;
+
+        .skill-page {
+            .skill-heading {
+                padding-top: 10px;
+            }
+
+            .skill-icon {
+                margin-left: 0px;
+
+            }
+        }
+    }
+
+    #projects {
+        .container {
+            .row {
+                padding-bottom: 0px;
+
+                .card {
+                    align-items: center;
+                    margin-bottom: 10vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding: 0px;
+        }
+
+    }
+
+    #contact-section {
+        .heading {
+            padding: 0%;
+        }
+
+        .sec-2 {
+            .col-sm-6 {
+                padding-left: 3vh !important;
+
+                input {
+                    width: 35vh !important;
+                }
+
+                label {
+                    padding-top: 5vh;
+                }
+
+            }
+
+            .message {
+                padding-left: 2vh !important;
+            }
+
+            input {
+                width: 35vh !important;
+            }
+
+            .send-btn {
+                margin-right: 7px;
+            }
+
+
+        }
+    }
+
+}
+
+// responsive in  mobile Medium 375px
+
+@media (min-width: 321px) and (max-width:375px) {
+    .name {
+        font-size: 45px !important;
+        padding-top: 305px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 185px !important;
+        font-size: 18px !important;
+    }
+
+    .navbar {
+        // padding-left: 0px !important;
+
+        .container-fluid {
+            padding-right: 32px !important;
+
+            .navbar-brand {
+                font-size: 20px !important;
+                // margin-right: 160px;
+            }
+
+            .navbar-toggler {
+                font-size: 12px !important;
+            }
+
+            .navbar-collapse {
+                padding-left: 0px !important;
+
+                .navbar-nav {
+                    .nav-link {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #about-section {
+        .intro {
+            .box {
+                font-size: 14px !important;
+            }
+
+            .icons {
+                padding-top: 50px !important;
+            }
+        }
+
+        .img-section {
+            img {
+                width: 260px;
+            }
+
+            p {
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    #skill-section {
+        padding-top: 585px;
+
+        .skill-page {
+            .skill-heading {
+                padding-top: 10px;
+            }
+
+            .skill-icon {
+                margin-left: 0px;
+
+            }
+        }
+    }
+
+    #projects {
+        .container {
+            .row {
+                padding-bottom: 0px;
+
+                .card {
+                    align-items: center;
+                    margin-bottom: 10vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding: 0px;
+        }
+
+    }
+
+    #contact-section {
+
+        .sec-2 {
+            .col-sm-6 {
+                padding-left: 5vh !important;
+
+                input {
+                    width: 36vh !important;
+                }
+
+                label {
+                    padding-top: 6vh;
+                }
+
+            }
+
+            .message {
+                padding-left: 3vh !important;
+            }
+
+            input {
+                width: 37vh !important;
+            }
+
+            .send-btn {
+                margin-right: 22px;
+            }
+
+        }
+    }
+
+}
+
+// responsive in  mobile Large 425px
+
+@media (min-width: 376px) and (max-width:425px) {
+    .name {
+        font-size: 55px !important;
+        padding-top: 305px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 185px !important;
+        font-size: 24px !important;
+    }
+
+    .navbar {
+        // padding-left: 0% !important;
+
+        .container-fluid {
+            // padding-left: 0% !important;
+            padding-right: 35px !important;
+
+            .navbar-brand {
+                // margin-right: 125px;
+                font-size: 35px !important;
+            }
+
+            .navbar-collapse {
+                padding-left: 0% !important;
+
+                .navbar-nav {
+                    .nav-link {
+                        font-size: 17px !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #about-section {
+        .intro {
+            .box {
+                font-size: 14px !important;
+            }
+
+            .icons {
+                padding-top: 50px !important;
+            }
+        }
+
+        .img-section {
+            img {
+                width: 260px;
+            }
+
+            p {
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    #skill-section {
+        padding-top: 585px;
+
+        .skill-page {
+            .skill-heading {
+                padding-top: 10px;
+            }
+
+            .skill-icon {
+                margin-left: 0px;
+
+            }
+        }
+    }
+
+    #projects {
+        .container {
+            .row {
+                padding-bottom: 0px !important;
+
+                .card {
+                    align-items: center;
+                    margin-bottom: 10vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding: 0px;
+        }
+
+    }
+
+    #contact-section {
+
+        .sec-1 {
+            padding: 3vh !important;
+
+            p {
+                padding-bottom: 5vh !important;
+                font-size: 11px;
+            }
+
+            .contact-icons {
+                padding-top: 5.5vh !important;
+            }
+        }
+
+        .sec-2 {
+            .col-sm-6 {
+                padding-left: 5vh !important;
+
+                input {
+                    width: 43vh !important;
+                }
+
+                label {
+                    padding-top: 6vh;
+                }
+            }
+
+            .message {
+                padding-left: 3vh !important;
+            }
+
+            input {
+                width: 43vh !important;
+            }
+
+            .send-btn {
+                margin-right: 28px;
+            }
+
+        }
+    }
+
+}
+
+// responsive in Tablet 768px
+
+@media (min-width:426px) and (max-width:768px) {
+    .name {
+        font-size: 95px !important;
+        padding-top: 305px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 185px !important;
+        font-size: 35px !important;
+    }
+
+    .navbar {
+        .container-fluid {
+            padding-right: 35px !important;
+
+            .navbar-brand {
+                margin-right: 350px;
+                font-size: 45px !important;
+            }
+
+            .navbar-collapse {
+                padding-left: 0% !important;
+            }
+        }
+
+    }
+
+    #about-section {
+        .intro {
+            .box {
+                font-size: 14px !important;
+            }
+
+            .icons {
+                padding-top: 50px !important;
+            }
+        }
+
+        .img-section {
+            img {
+                width: 260px;
+            }
+
+            p {
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    #skill-section {
+        padding-top: 110px;
+
+        .skill-page {
+            .skill-heading {
+                padding-top: 10px;
+            }
+
+            .skill-icon {
+                margin-left: 50px;
+                font-size: 70px;
+            }
+        }
+    }
+
+    #projects {
+        .container {
+            .row {
+                column-gap: 7vh;
+            }
+
+            .card {
+                width: 31vh;
+
+                .slide.slide1 {
+                    width: 27.5vh;
+                }
+
+                .slide.slide2 {
+                    width: 27.5vh;
+
+                    .content {
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .image {
+                    width: 27.5vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding-top: 8vh;
+            padding-left: 8vh !important;
+        }
+    }
+
+    #contact-section {
+        .sec-1 {
+            padding: 3vh !important;
+
+            p {
+                padding-bottom: 5vh !important;
+                font-size: 11px;
+            }
+
+            .contact-icons {
+                padding-top: 5.5vh !important;
+            }
+        }
+
+        .sec-2 {
+            .col-sm-6 {
+                input {
+                    width: 20vh !important;
+                }
+            }
+
+            input {
+                width: 50vh !important;
+            }
+
+        }
+    }
+
+}
+
+// responsive in laptop 1024px
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .name {
+        font-size: 130px !important;
+        padding-top: 270px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 180px !important;
+        font-size: 50px !important;
+    }
+
+    .navbar {
+        padding-left: 0% !important;
+        width: 125vh !important;
+
+        .navbar-brand {
+            font-size: 35px !important;
+        }
+
+        .navbar-collapse {
+            padding-left: 65px !important;
+
+            .navbar-nav {
+                .nav-link {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+
+    #about-section {
+        .intro {
+            .box {
+                font-size: 15px !important;
+            }
+
+            .icons {
+                padding-top: 50px !important;
+            }
+        }
+
+        .img-section {
+            img {
+                width: 310px;
+            }
+
+            p {
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    #projects {
+        .container {
+            .row {
+                column-gap: 15vh;
+            }
+
+            .card {
+                .slide.slide1 {
+                    width: 28vh;
+                }
+
+                .slide.slide2 {
+                    width: 102%;
+                }
+
+                .image {
+                    width: 34vh;
+                }
+            }
+        }
+
+        .read-btn {
+            padding-top: 12vh;
+            padding-left: 12vh;
+        }
+    }
+
+    #contact-section {
+        .sec-1 {
+            padding: 3vh !important;
+
+            h2 {
+                padding-bottom: 2.5vh !important;
+            }
+
+            p {
+                padding-bottom: 5vh !important;
+            }
+
+            .contact-icons {
+                padding-top: 5.5vh !important;
+            }
+        }
+
+        .sec-2 {
+            .col-sm-6 {
+                input {
+                    width: 30vh !important;
+                }
+            }
+
+            input {
+                width: 70vh !important;
+            }
+
+        }
+    }
+
+
+}
+
+
+//  responsive in laptop L 1440px
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .name {
+        font-size: 130px !important;
+        padding-top: 390px !important;
+        // padding-bottom: 0px !important;
+    }
+
+    .dev {
+        // padding-bottom: 180px !important;
+        font-size: 50px !important;
+    }
+
+    .navbar {
+        padding-left: 0% !important;
+
+        .navbar-brand {
+            font-size: 45px !important;
+        }
+
+        .navbar-collapse {
+            padding-left: 115px !important;
+
+            .navbar-nav {
+                .nav-link {
+                    font-size: 22px !important;
+                }
+            }
+        }
+    }
+
+    #skill-section {
+        padding-top: 25vh !important;
+    }
+
+}
