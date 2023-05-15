@@ -18,15 +18,6 @@ window.addEventListener('scroll', () => {
 
 function validateForm() {
   // Get form inputs
-
-
-  return true;
-}
-
-document.getElementById("submit-btn").addEventListener("click", function (event) {
-
-  event.preventDefault(); // Prevent form submission
-
   var firstName = document.getElementById("inputFirstName");
   var lastName = document.getElementById("inputLastName");
   var email = document.getElementById("inputMail");
@@ -85,42 +76,51 @@ document.getElementById("submit-btn").addEventListener("click", function (event)
   }
 
 
-  // Hide form fields
-  document.getElementById("thankYouMessage").style.display = "block";
+  return true;
+}
 
 
-  document.getElementById('myForm').style.display = 'none';
+document.getElementById("submit-btn").addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent form submission
 
-
+  if (validateForm()) {
+    document.getElementById('myForm').style.display = 'none';
+    document.getElementById("thankYouMessage").style.display = "block";
+    setTimeout(resetDiv, 2000);
+  }
 });
 
+function resetDiv() {
+  var divContent = document.getElementById("refresh");
+  var initialContent = divContent.innerHTML;
+  divContent.innerHTML = initialContent;
+}
 
-
-// function CreateUser() {
-//   // post data
-//   fetch('http://localhost:3000/insert', {
-//     method: 'POST',
-//     body: JSON.stringify({
-//       first_name: document.getElementById('inputFirstName').value,
-//       last_name: document.getElementById('inputLastName').value,
-//       email: document.getElementById('inputMail').value,
-//       phone_number: document.getElementById('phoneNumber').value,
-//       message: document.getElementById('message').value,
-//     }),
-//     headers: {
-//       'Content-type': 'application/json; charset=UTF-8',
-//     },
-//   })
-//     .then((response) => response.json())
-//     .then((json) => {
-//       console.log(json);
-//       const form = document.getElementById('myForm');
-//       form.reset();
-//     })
-//     .catch((error) => {
-//       console.error('Error:', error);
-//     });
-// }
+function CreateUser() {
+  // post data
+  fetch('http://localhost:3000/insert', {
+    method: 'POST',
+    body: JSON.stringify({
+      first_name: document.getElementById('inputFirstName').value,
+      last_name: document.getElementById('inputLastName').value,
+      email: document.getElementById('inputMail').value,
+      phone_number: document.getElementById('phoneNumber').value,
+      message: document.getElementById('message').value,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json);
+      const form = document.getElementById('myForm');
+      form.reset();
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+}
 
 
 

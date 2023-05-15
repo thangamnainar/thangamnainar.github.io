@@ -51,20 +51,20 @@ span {
   font-family: "Chivo Mono", monospace;
   font-family: "Rubik Wet Paint", cursive;
   font-size: 40px;
-  color: #66d9ed;
+  color: #dfb10c;
 }
 .home-image nav .navbar-toggler {
   color: #fff;
   background-color: #dfb10c;
 }
 .home-image nav .navbar-collapse {
-  padding-left: 370px;
+  padding-left: 40vh;
 }
 .home-image nav .navbar-collapse .navbar-nav .nav-link {
   font-family: "Chivo Mono", monospace;
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
-  color: #dfb10c;
+  color: #fff;
 }
 .home-image nav.scrolled {
   /* set background color on scroll */
@@ -73,6 +73,7 @@ span {
   margin-left: -12px;
   padding-top: 0px;
   padding-bottom: 0px;
+  background-color: #333;
 }
 .home-image nav.scrolled .nav-link {
   color: #dfb10c !important;
@@ -87,7 +88,6 @@ span {
   }
 }
 #about-section .about-page {
-  /* border: 10px solid yellow; */
   height: 100vh;
 }
 #about-section .about-page .fa-brands {

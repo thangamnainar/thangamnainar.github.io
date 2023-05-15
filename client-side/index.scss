@@ -61,7 +61,7 @@ span {
             font-family: 'Chivo Mono', monospace;
             font-family: 'Rubik Wet Paint', cursive;
             font-size: 40px;
-            color: #66d9ed;
+            color:$yellow_color;
         }
 
         .navbar-toggler {
@@ -70,15 +70,14 @@ span {
         }
 
         .navbar-collapse {
-            padding-left: 370px;
+            padding-left:40vh;
 
             .navbar-nav {
                 .nav-link {
                     font-family: 'Chivo Mono', monospace;
                     font-family: 'Roboto Mono', monospace;
                     font-size: 20px;
-                    color: $yellow_color ;
-                    // background-color: $black_color;
+                    color: $white_color ;
                 }
             }
         }
@@ -92,10 +91,12 @@ span {
         margin-left: -12px;
         padding-top: 0px;
         padding-bottom: 0px;
+        // transition: .5s;
+        background-color: $black_light_color;  
+
 
         .nav-link {
             color: $yellow_color !important;
-            // background-color: $black_color;  
         }
 
         .navbar-brand {
@@ -116,14 +117,9 @@ span {
 // about section
 
 #about-section {
-    // background-color: $black_color;
-    // height: 100vh;
-
+    
     .about-page {
-        /* border: 10px solid yellow; */
         height: 100vh;
-        // background-color: black;
-
 
         .fa-brands {
             font-size: 40px;
