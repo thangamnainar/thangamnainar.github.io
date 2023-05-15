@@ -469,7 +469,9 @@ span {
             }
             .hidden {
                 // display: none;  
-                color: #66d9ed;
+                color: #66d9ed !important;
+                padding-top: 27vh !important;
+                padding-left: 27vh !important;
             }
             #thankYouMessage{
                 color: $white_color;

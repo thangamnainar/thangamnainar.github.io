@@ -86,10 +86,11 @@ document.getElementById("submit-btn").addEventListener("click", function (event)
 
 
   // Hide form fields
+  document.getElementById("thankYouMessage").style.display = "block";
+
 
   document.getElementById('myForm').style.display = 'none';
 
-  document.getElementById("thankYouMessage").style.display = "block";
 
 });
 
