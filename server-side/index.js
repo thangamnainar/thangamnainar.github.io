@@ -27,7 +27,7 @@ app.post('/insert', (req, res) => {
             console.log('result is ', JSON.stringify(results));
         }
         res.send(JSON.stringify(results));
-        // connection.end();
+        // connection.end();    
     });
 });
 
