@@ -7,11 +7,11 @@ app.use(express.json());
 app.use(cors());
 
 var connection=mysql.createConnection({
-    host:'127.0.0.1',
+    host:'YOUR_HOST',
     port:'3306',
-    user:'thangam',
-    password:'Thasan24',
-    database:'portfolio'
+    user:'USER_NAME',
+    password:'PASSWORD',
+    database:'DATABASE_NAME'
 });
 
 connection.connect();
@@ -26,7 +26,7 @@ app.post('/insert', (req, res) => {
         } else {
             console.log('result is ', JSON.stringify(results));
         }
-        res.send(JSON.stringify(results));
+        res.send(JSON.stringify(results));  
         // connection.end();    
     });
 });
